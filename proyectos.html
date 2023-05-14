@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Proyectos</title>
+    <link rel="icon" href="logo/icon.ico" type="image/x-icon" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      media="screen"
+      href="css/estilo.css"
+    />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
+  </head>
+  <body>
+    <header>
+      <div id="contenedor-menu-superior">
+        <div class="nav">
+          <div class="logo">
+            <div id="margen"></div>
+            <a href="index.html">
+              <div id="logo"><img src="logo/logo.png" /></div>
+
+              <p>Portfolio Aarón Medina Rodríguez</p></a
+            >
+          </div>
+        </div>
+
+        <button
+          class="menu menu-btn"
+          id="active"
+          onclick="
+        this.classList.toggle('opened');
+        this.setAttribute('aria-expanded', this.classList.contains('opened'))
+        this.parentNode.classList.toggle('opened');
+        this.parentNode.setAttribute('aria-expanded', this.parentNode.classList.contains('opened'))"
+          aria-label="Main Menu"
+        >
+          <svg viewBox="0 0 100 100">
+            <path
+              class="line line1"
+              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
+            />
+            <path class="line line2" d="M 20,50 H 80" />
+            <path
+              class="line line3"
+              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
+            />
+          </svg>
+        </button>
+        <div class="button-menu">
+          <div class="wrapper">
+            <div class="menu-content">
+              <div><a href="galeria.html">Galeria</a></div>
+              <div><a href="proyectos.html">Proyectos</a></div>
+              <div><a href="contacto.html">Contacto</a></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="content">
+      <div class="GloboProyecto">
+        <div class="proyectoImagen proyectoImagen-1">
+          <button class="proyectoBtn" onclick="toggleProyectoInfo(this)">
+            <p class="nombreAuxiliar">El desenlace de un viaje</p>
+            <img src="logo/infoicon.png" />
+            <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1.5L13.5 13.5M1.5 13.5L13.5 1.5" stroke="#fff" />
+            </svg>
+          </button>
+        </div>
+        <div class="proyectoInfo">
+          <p class="nombre">El desenlace de un viaje</p>
+          <p class="proyecto-content">
+            Este documento es un viaje por ciudades imaginadas, urbes que son o
+            que fueron, a través de la contaminación, la decadencia, y el
+            inevitable fin de la sociedad actual si no se actúa al respecto.
+            Partiendo de Las ciudades imaginarias de Ítalo Calvino, se realizan
+            una serie de dibujos en acuarela que representan diferentes
+            problemas sociales y medioambientales. Estos problemas son descritos
+            y especificados, junto con el proceso de realización de las obras
+            plásticas.
+          </p>
+          <div class="enlaces">
+            <a
+              href="https://riull.ull.es/xmlui/handle/915/24870"
+              target="_blank"
+              ><p>ULL</p>
+            </a>
+          </div>
+        </div>
+      </div>
+
+      <div class="GloboProyecto">
+        <div class="proyectoImagen proyectoImagen-2">
+          <button class="proyectoBtn" onclick="toggleProyectoInfo(this)">
+            <img src="logo/infoicon.png" />
+            <p class="nombreAuxiliar">ClickHub</p>
+            <svg viewBox="0 0 15 15" xmlns="http://www.w3.org/2000/svg">
+              <path d="M1.5 1.5L13.5 13.5M1.5 13.5L13.5 1.5" stroke="#fff" />
+            </svg>
+          </button>
+        </div>
+        <div class="proyectoInfo">
+          <p class="nombre">ClickHub</p>
+          <p class="proyecto-content">
+            ClickHub es una plataforma web que conecta a empresas con expertos
+            en marketing digital, desarrollo web, diseño gráfico y otras áreas
+            relacionadas con la presencia online. Los usuarios pueden crear un
+            perfil para ofrecer sus servicios y habilidades a potenciales
+            empleadores, quienes pueden buscar y contratar profesionales para
+            proyectos específicos o a largo plazo. ClickHub ofrece una interfaz
+            fácil de usar y herramientas de comunicación integradas para
+            asegurar una gestión eficiente y efectiva de los proyectos.
+          </p>
+          <div class="enlaces">
+            <a
+              href="https://departamentoinformaticajmpp.com/web/"
+              target="_blank"
+              ><p>ClickHub</p>
+            </a>
+            <a
+              href="https://departamentoinformaticajmpp.com/web/"
+              target="_blank"
+              ><p>ClickHub</p>
+            </a>
+            <a
+              href="https://departamentoinformaticajmpp.com/web/"
+              target="_blank"
+            >
+              <p>ClickHub</p>
+            </a>
+          </div>
+        </div>
+      </div>
+      <footer>
+        <div><i>Aarón Medina Rodríguez - 2023</i></div>
+        <p style="margin: 10px 20px">
+          <a href="http://jigsaw.w3.org/css-validator/check/referer">
+            <img
+              style="border: 0; width: 88px; height: 31px"
+              src="http://jigsaw.w3.org/css-validator/images/vcss"
+              alt="¡CSS Válido!"
+            />
+          </a>
+        </p>
+      </footer>
+    </div>
+
+    <script src="scripts/loader.js"></script>
+    <script src="scripts/toggleProyectoInfo.js"></script>
+  </body>
+</html>
