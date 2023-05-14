@@ -400,6 +400,7 @@ body {
   }
   .proyecto-content {
     width: 80vw;
+    font-size: 2vh;
   }
   .proyectoInfo .enlaces {
     align-self: auto;
