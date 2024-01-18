@@ -1,8 +1,0 @@
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      http_headers:
-        "Cache-Control": "max-age=31536000, public"
-        "Expires": "Thu, 31 Dec 2099 23:59:59 GMT"

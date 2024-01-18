@@ -1,111 +1,13 @@
-<!DOCTYPE html>
-<html lang="es">
+<!doctype html>
+<html lang="en">
   <head>
-    <link
-      rel="stylesheet"
-      type="text/css"
-      media="screen"
-      href="css/estilo.css"
-    />
-    <link rel="icon" href="logo/icon.ico" type="image/x-icon" />
-    <link rel="stylesheet" type="text/css" media="screen" href="css/menu.css" />
-    <meta charset="utf-8" />
-    <title>Aarón web</title>
-    <meta name="viewport" content="width=device-width" />
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vite + Vue</title>
   </head>
   <body>
-    <header>
-      <div id="contenedor-menu-superior">
-        <div class="nav">
-          <div class="logo">
-            <div id="margen"></div>
-            <a href="index.html">
-              <div id="logo"><img src="logo/logo.png" /></div>
-
-              <p>Portfolio Aarón Medina Rodríguez</p></a
-            >
-          </div>
-        </div>
-
-        <button
-          class="menu menu-btn"
-          id="active"
-          onclick="
-        this.classList.toggle('opened');
-        this.setAttribute('aria-expanded', this.classList.contains('opened'))
-        this.parentNode.classList.toggle('opened');
-        this.parentNode.setAttribute('aria-expanded', this.parentNode.classList.contains('opened'))"
-          aria-label="Main Menu"
-        >
-          <svg viewBox="0 0 100 100">
-            <path
-              class="line line1"
-              d="M 20,29.000046 H 80.000231 C 80.000231,29.000046 94.498839,28.817352 94.532987,66.711331 94.543142,77.980673 90.966081,81.670246 85.259173,81.668997 79.552261,81.667751 75.000211,74.999942 75.000211,74.999942 L 25.000021,25.000058"
-            />
-            <path class="line line2" d="M 20,50 H 80" />
-            <path
-              class="line line3"
-              d="M 20,70.999954 H 80.000231 C 80.000231,70.999954 94.498839,71.182648 94.532987,33.288669 94.543142,22.019327 90.966081,18.329754 85.259173,18.331003 79.552261,18.332249 75.000211,25.000058 75.000211,25.000058 L 25.000021,74.999942"
-            />
-          </svg>
-        </button>
-        <div class="button-menu">
-          <div class="wrapper">
-            <div class="menu-content">
-              <div><a href="galeria.html">Galeria</a></div>
-              <div><a href="proyectos.html">Proyectos</a></div>
-              <div><a href="contacto.html">Contacto</a></div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-    <div class="content">
-      <div class="welcome">
-        <p class="nombre">Aarón Medina Rodríguez</p>
-        <p>Bienvenido a mi portfolio web</p>
-        <div>
-          <div><a href="galeria.html">Galeria</a></div>
-          <div><a href="proyectos.html">Proyectos</a></div>
-          <div><a href="contacto.html">Contacto</a></div>
-        </div>
-      </div>
-      <footer>
-        <div style="display: flex; align-items: center">
-          <p style="margin: 10px 20px">
-            <a href="http://jigsaw.w3.org/css-validator/check/referer">
-              <img
-                style="border: 0; width: 88px; height: 31px"
-                src="http://jigsaw.w3.org/css-validator/images/vcss"
-                alt="¡CSS Válido!"
-              />
-            </a>
-          </p>
-
-          <div><i>Aarón Medina Rodríguez - 2023</i></div>
-          <a
-            rel="license"
-            href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
-            style="margin: 10px 20px"
-            ><img
-              alt="Licencia de Creative Commons"
-              style="border-width: 0"
-              src="https://i.creativecommons.org/l/by-nc-nd/4.0/88x31.png"
-          /></a>
-        </div>
-        <div style="font-size: 12px">
-          Esta obra está bajo una
-          <a
-            style="color: white; text-decoration: underline"
-            rel="license"
-            href="http://creativecommons.org/licenses/by-nc-nd/4.0/"
-            >licencia de Creative Commons
-            Reconocimiento-NoComercial-SinObraDerivada 4.0 Internacional</a
-          >.
-        </div>
-      </footer>
-    </div>
-
-    <script src="scripts/loader.js"></script>
+    <div id="app"></div>
+    <script type="module" src="/src/main.js"></script>
   </body>
 </html>
